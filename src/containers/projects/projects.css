@@ -1,0 +1,182 @@
+.projects-screen{
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 80px);
+    margin-top: 100px;
+}
+.projects{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 87%;
+    height: 100%;
+    margin: auto;
+    gap: 20px;
+}
+.projects-first{
+    display: grid;
+    margin: auto;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    overflow: scroll;
+}
+.projects-second{
+    display: grid;
+    margin: auto;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    overflow: scroll;
+}
+.first-card{
+    height: 250px;
+    width: 250px;
+    background: #FFECD0;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.first-card:hover .card-back{
+    z-index: -1;
+    position: absolute;
+    transform: translate(20px, -20px);
+    height: 250px;
+    width: 250px;
+    background: #FFBF64;
+    border: 1px solid #000000;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.second-card{
+    height: 250px;
+    width: 250px;
+    background: #FFECD0;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.second-card:hover .card-back{
+    z-index: -1;
+    position: absolute;
+    transform: translate(20px, -20px);
+    height: 250px;
+    width: 250px;
+    background: #FFBF64;
+    border: 1px solid #000000;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.first-card img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: auto;
+}
+.second-card img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: auto;
+}
+@media only screen and (max-width: 1150px) {
+    .projects{
+        width: 94%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .projects{
+        width: 96%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .projects{
+        width: 80%;
+    }
+    .first-card{
+        height: 200px;
+        width: 200px;
+
+    }
+    .first-card:hover .card-back{
+        height: 200px;
+        width: 200px;
+    }
+    .second-card{
+        height: 200px;
+        width: 200px;
+    }
+    .second-card:hover .card-back{
+        height: 200px;
+        width: 200px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .projects{
+        width: 90%;
+    }
+    .first-card{
+        height: 180px;
+        width: 180px;
+
+    }
+    .first-card:hover .card-back{
+        height: 180px;
+        width: 180px;
+    }
+    .second-card{
+        height: 180px;
+        width: 180px;
+    }
+    .second-card:hover .card-back{
+        height: 180px;
+        width: 180px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .projects{
+        width: 90%;
+        justify-content: space-around;
+    }
+    .projects-first{
+        gap: 20px;
+    }
+    .projects-second{
+        gap: 20px;
+    }
+    .first-card{
+        height: 160px;
+        width: 160px;
+
+    }
+    .first-card:hover .card-back{
+        transform: translate(10px, -10px);
+        height: 160px;
+        width: 160px;
+    }
+    .second-card{
+        height: 160px;
+        width: 160px;
+    }
+    .second-card:hover .card-back{
+        transform: translate(10px, -10px);
+        height: 160px;
+        width: 160px;
+    }
+    .first-card img{
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        margin: auto;
+    }
+    .second-card img{
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        margin: auto;
+    }
+}

@@ -1,0 +1,105 @@
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+.navbar{
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.navbar-first{
+    display: flex;
+    gap: 50px;
+}
+.navbar-first a{
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    color: gray;
+    font-weight: 500;
+    font-size: 18px;
+}
+.navbar-first a:hover{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.navbar-second{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.navbar-second-link{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.navbar-second button{
+    cursor: pointer;
+    border-radius: 17px;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: white;
+}
+.navbar-second button:hover{
+    background-color: black;
+    color: white;
+}
+.navbar-second .menu{
+    display: none;
+}
+.navbar-second-newbar{
+    display: none;
+}
+@media only screen and (max-width: 900px){
+    .navbar-first{
+        display: none;
+    }
+    .navbar-second{
+        width: 90vw;
+        justify-content: space-between;
+    }
+    .navbar-second button{
+        display: none;
+    }
+    .navbar-second .menu{
+        -webkit-animation: fadeIn 0.3s;
+        animation: fadeIn 0.3s;
+        display: block;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+    }
+    .navbar-second-newbar{
+        -webkit-animation: fadeIn 0.3s;
+        animation: fadeIn 0.3s;
+        background-color: white;
+        position: absolute;
+        right: 0;
+        padding: calc(100vw - 95vw);
+        top: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: auto;
+        align-items: flex-end;
+    }
+    .navbar-second-newbar a{
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,229 @@
+.experiences-screen{
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: space-evenly;
+}
+.yellow{
+    color: orange;
+    font-weight: 500;
+}
+.experiences-skiller{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 50px;
+}
+.skiller-skills{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+.skill{
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skill-cont{
+    width: 70%;
+    height: 30px;
+    border: 1px solid #000000;
+    border-radius: 31px;
+}
+.react{
+    width: 83%;
+    height: 30px;
+    background: #FFB64D;
+    border: 1px solid #000000;
+    border-radius: 31px;
+}
+.flutter{
+    width: 55%;
+    height: 30px;
+    background: #FFB64D;
+    border: 1px solid #000000;
+    border-radius: 31px;
+}
+.figma{
+    width: 87%;
+    height: 30px;
+    background: #FFB64D;
+    border: 1px solid #000000;
+    border-radius: 31px;
+}
+.python{
+    width: 67%;
+    height: 30px;
+    background: #FFB64D;
+    border: 1px solid #000000;
+    border-radius: 31px;
+}
+.skiller-certification{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+.certification h1{
+    font-weight: 500;
+    font-size: 24px;
+}
+.experiences-exp{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.exp{
+    border: 1px solid #000000;
+    border-radius: 31px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 90%;
+}
+.exp-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.exp-top h1{
+    font-weight: 500;
+    font-size: 24px;
+}
+.exp-bottom{
+    max-width: 80%;
+}
+.custom-shape-divider-top-1669623932 {
+    filter: blur(50px);
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1669623932 svg {
+    position: relative;
+    display: block;
+    width: calc(227% + 1.3px);
+    height: 173px;
+}
+
+.custom-shape-divider-top-1669623932 .shape-fill {
+    fill: #9061F5;
+}
+
+
+@media only screen and (max-width: 1150px) {
+    .experiences-exp{
+        width: 45%;
+        gap: 20px;
+    }
+    .experiences-skiller{
+        width: 45%;
+        gap: 20px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .experiences-exp{
+        width: 47%;
+        gap: 15px;
+    }
+    .exp-bottom{
+        max-width: 90%;
+    }
+    .experiences-skiller{
+        width: 47%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .experiences-screen{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 50px;
+    }
+    .experiences-exp{
+        width: 80%;
+        gap: 50px;
+    }
+    .experiences-skiller{
+        width: 80%;
+        gap: 50px;
+    }
+    .skiller-skills{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .skill-cont{
+        width: 80%;
+        height: 30px;
+        border: 1px solid #000000;
+        border-radius: 31px;
+    }
+    .skill{
+        max-width: 100%;
+    }
+    .skiller-certification{
+        gap: 50px;
+    }
+    .exp-bottom{
+        max-width: 90%;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .experiences-exp{
+        width: 90%;
+        gap: 30px;
+    }
+    .exp-top h1{
+        font-size: 21px;
+    }
+    .certification h1{
+        font-weight: 500;
+        font-size: 21px;
+    }
+    .experiences-skiller{
+        width: 90%;
+        gap:30px;
+    }
+    .skill-cont{
+        width: 65%;
+    }
+    .exp{
+        padding: 20px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .exp-top p{
+        font-size: 14px;
+    }
+    .exp-top h1{
+        font-size: 18px;
+    }
+    .certification h1{
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .certification p{
+        font-size: 14px;
+    }
+    .exp-bottom p{
+        font-size: 14px;
+    }
+}
