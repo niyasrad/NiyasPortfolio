@@ -21,7 +21,7 @@
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-    overflow: scroll;
+    overflow: auto;
 }
 .projects-second{
     display: grid;
@@ -29,7 +29,7 @@
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-    overflow: scroll;
+    overflow: auto;
 }
 .first-card{
     height: 250px;
@@ -100,7 +100,6 @@
     .first-card{
         height: 200px;
         width: 200px;
-
     }
     .first-card:hover .card-back{
         height: 200px;
