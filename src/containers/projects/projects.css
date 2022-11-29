@@ -101,17 +101,23 @@
         height: 200px;
         width: 200px;
     }
+    .first-card:hover{
+        background-color: gold;
+    }
     .first-card:hover .card-back{
-        height: 200px;
-        width: 200px;
+        height: 0;
+        width: 0;
     }
     .second-card{
         height: 200px;
         width: 200px;
     }
+    .second-card:hover{
+        background-color: gold;
+    }
     .second-card:hover .card-back{
-        height: 200px;
-        width: 200px;
+        height: 0;
+        width: 0;
     }
 }
 @media only screen and (max-width: 700px) {
@@ -121,17 +127,8 @@
     .first-card{
         height: 180px;
         width: 180px;
-
-    }
-    .first-card:hover .card-back{
-        height: 180px;
-        width: 180px;
     }
     .second-card{
-        height: 180px;
-        width: 180px;
-    }
-    .second-card:hover .card-back{
         height: 180px;
         width: 180px;
     }
@@ -152,17 +149,11 @@
         width: 160px;
 
     }
-    .first-card:hover .card-back{
-        transform: translate(10px, -10px);
-        height: 160px;
-        width: 160px;
-    }
     .second-card{
         height: 160px;
         width: 160px;
     }
     .second-card:hover .card-back{
-        transform: translate(10px, -10px);
         height: 160px;
         width: 160px;
     }
